@@ -1,93 +1,104 @@
 <div align="center">
 
-# Kin2 Workforce
+# Hi, I'm Kennedy Kintu
 
-**All-in-one workforce management for UK shift-based SMEs**  
-Security · Care · Cleaning · Hospitality · Logistics
+**Founder of Kin2 Services Limited**  
+Building software for workforce operations, compliance, scheduling, and AI-assisted business systems.
 
-[![Live](https://img.shields.io/badge/Live-kin2serviceslimited.co.uk-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://kin2serviceslimited.co.uk)
-[![Version](https://img.shields.io/badge/version-v3.7.7-6366f1?style=for-the-badge)](https://github.com/Kenkin2/Kin2Workforce/releases)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[Website](https://kin2serviceslimited.co.uk) · [Book a demo](https://kin2serviceslimited.co.uk/book-demo) · [Email](mailto:kin@kin2serviceslimited.com) · [LinkedIn](https://linkedin.com/in/kennedykintu)
 
 </div>
 
 ---
 
-## What is Kin2 Workforce?
+## What I’m building
 
-Kin2 is a purpose-built UK workforce platform that replaces stitched-together spreadsheets, generic HR tools, and compliance guesswork with one system that actually understands how shift-based businesses operate.
+### Kin2 Workforce
 
-Built by operators, for operators — from a SIA-licensed security company background.
+Kin2 Workforce is a workforce management platform for UK shift-based businesses.
 
----
+It is designed to help organisations manage:
+- shifts and rota planning
+- attendance and clock-in workflows
+- timesheets and approvals
+- payroll support and exports
+- staff records and compliance tasks
+- communications and admin operations
+- AI-assisted tools for workforce decision support
 
-## Why Kin2 over BrightHR, Deputy, or Breathe?
+## Who Kin2 is built for
 
-| Feature | BrightHR | Deputy | Kin2 Workforce |
-|---------|----------|--------|----------------|
-| AWR (Agency Worker Regs) auto-tracker | ❌ | ❌ | ✅ 12-week qualifying period |
-| IR35 status checker | ❌ | ❌ | ✅ 15-question weighted assessment |
-| AI demand forecasting | ❌ | ❌ | ✅ Pattern-based shift predictions |
-| GPS clock-in + fraud detection | Basic | Basic | ✅ Geofenced + anomaly AI |
-| SIA licence / DBS / RTW tracking | ❌ | ❌ | ✅ AI document extraction |
-| Xero + Sage 50 payroll export | Limited | Xero only | ✅ Both, OAuth direct-push |
-| Enterprise SSO (SAML/OIDC) | Paid add-on | ❌ | ✅ Google Workspace · Azure AD · Okta |
-| 14 autonomous AI agents | ❌ | ❌ | ✅ Human-in-the-loop gates |
-| Post-quantum cryptography | ❌ | ❌ | ✅ NIST PQC |
-| Charity & social enterprise discount | ❌ | ❌ | ✅ 90% discount |
-| Starter price | £4.50/emp/mo | £3.60/user/mo | **£39/mo flat ≤30 staff** |
+**Current sectors of focus**
+- Security
+- Care
+- Cleaning
+- Hospitality
+- Charities and community organisations
 
----
-
-## Core Platform
-
-```
-Shifts & Rota          GPS Clock-in/out        Timesheets & Payroll
-Invoice Generation     Staff Profiles          Right-to-Work AI
-AWR Compliance ✅      IR35 Checker ✅          Demand Forecasting ✅
-Shift-Fill Engine ✅   Fraud Detection ✅       Enterprise SSO ✅
-Xero + Sage Export ✅  Webhook Automation ✅    14 AI Agents ✅
-```
-
-**ICO registered** · C1895789 · GDPR Art. 22 · Equality Act 2010 · Working Time Regulations
+**Project links**
+- Live website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
+- Demo booking: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
+- Main codebase: private repository
 
 ---
 
-## Technology
+## What I work with
 
-```
-Frontend          Backend              Data & AI
-──────────────    ──────────────       ─────────────────────────
-React 18          Node.js 20           Neon PostgreSQL (serverless)
-TypeScript        Express              OpenAI · Anthropic · Gemini
-Vite              Drizzle ORM          Perplexity
-shadcn/ui         269 API namespaces   14 Autonomous AI Agents
-TanStack Query    326 route files      Circuit breakers
-Framer Motion     CSRF · Rate limit    Human-in-the-loop gates
-PWA · Electron    HMAC · Nonce         Bias detection · XAI
-```
+**Frontend**
+- TypeScript
+- React
+- Vite
+- Tailwind
+
+**Backend**
+- Node.js
+- Express
+- PostgreSQL
+- Drizzle ORM
+
+**Integrations and tooling**
+- Stripe
+- SendGrid
+- Twilio
+- Google services
+- OpenAI and other AI providers
 
 ---
 
-## Pricing
+## What this GitHub represents
 
-| Plan | Monthly | Annual | Staff |
-|------|---------|--------|-------|
-| **Starter** | £39/mo | £390/yr | ≤ 30 |
-| **Growth** | £79/mo | £790/yr | ≤ 100 |
-| **Scale** | £129/mo | £1,290/yr | ≤ 250 |
-| **Enterprise** | Custom | Custom | Unlimited |
+This GitHub is mainly used for building and maintaining Kin2 and related founder-led technical work.
 
-14-day free trial · No per-seat fees · No setup charge · Annual = 2 months free
+Because the main product repository is private, this profile is intended to give a clear public snapshot of:
+- who I am
+- what I’m building
+- the kinds of systems I work on
+- where to learn more about the product
+
+---
+
+## Current focus
+
+Right now I’m focused on:
+- improving release discipline and production readiness
+- strengthening workforce operations workflows
+- expanding reporting, compliance, and automation features
+- refining the public product and founder presence around Kin2
+
+---
+
+## Contact
+
+- Website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
+- Email: [kin@kin2serviceslimited.com](mailto:kin@kin2serviceslimited.com)
+- Demo: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
 
 ---
 
 <div align="center">
 
-**[→ Start Free Trial](https://kin2serviceslimited.co.uk/register)**&nbsp;&nbsp;|&nbsp;&nbsp;**[→ Book a Demo](https://kin2serviceslimited.co.uk/demo)**&nbsp;&nbsp;|&nbsp;&nbsp;**[→ View Pricing](https://kin2serviceslimited.co.uk/pricing)**
+**Building practical systems for real-world workforce operations.**
 
-Kin2 Services Limited · Company No. 14672114 · Registered in England & Wales  
-[kin@kin2serviceslimited.com](mailto:kin@kin2serviceslimited.com)
+London, UK
 
 </div>
