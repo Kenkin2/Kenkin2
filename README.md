@@ -61,6 +61,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 - Getting Started: [GETTING_STARTED.md](GETTING_STARTED.md)
 - Founder Note: [FOUNDER_NOTE.md](FOUNDER_NOTE.md)
 - Features Summary: [FEATURES_SUMMARY.md](FEATURES_SUMMARY.md)
+- Benefits: [BENEFITS.md](BENEFITS.md)
 
 ---
 
