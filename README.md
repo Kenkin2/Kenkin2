@@ -23,7 +23,9 @@ It is designed to help organisations manage:
 - timesheets and approvals
 - payroll support and exports
 - staff records and compliance tasks
+- reporting and workforce analytics
 - communications and admin operations
+- automation of routine workforce processes
 - AI-assisted tools for workforce decision support
 
 ---
