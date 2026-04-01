@@ -1,33 +1,115 @@
-# Kenkin2
+<div align="center">
 
-Public profile repository for Kin2 Workforce and Kin2 Services Limited.
+# Hi, I'm Kennedy Kintu
 
-## Kin2 Workforce
+**Founder of Kin2 Services Limited**  
+Building software for workforce operations, compliance, scheduling, and AI-assisted business systems.
+
+[Website](https://kin2serviceslimited.co.uk) · [Book a demo](https://kin2serviceslimited.co.uk/book-demo) · [Email](mailto:kin@kin2serviceslimited.com) · [LinkedIn](https://linkedin.com/in/kennedykintu)
+
+</div>
+
+---
+
+## What I’m building
+
+### Kin2 Workforce
 
 Kin2 Workforce is an AI-powered workforce operations platform for UK shift-based SMEs.
 
-It is built to support:
-- shift scheduling
+It is designed to help organisations manage:
+- shifts and rota planning
 - attendance and clock-in workflows
 - timesheets and approvals
-- payroll-support workflows
+- payroll support and exports
 - staff records and compliance tasks
 - communications and admin operations
-- AI-assisted workforce decision support
+- AI-assisted tools for workforce decision support
 
-## Public product information
+## Who Kin2 is built for
+
+**Current sectors of focus**
+- Security
+- Care
+- Cleaning
+- Hospitality
+- Charities and community organisations
+
+**Project links**
+- Live website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
+- Demo booking: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
+- Main codebase: private repository
+
+---
+
+## Public product snapshot
+
+This public repository now includes a cleaner product-facing trust layer for Kin2 Workforce.
 
 - Product status: [STATUS.md](STATUS.md)
 - Public release notes: [RELEASES.md](RELEASES.md)
 - Legal overview: [LEGAL_OVERVIEW.md](LEGAL_OVERVIEW.md)
 - Security contact: [SECURITY_CONTACT.md](SECURITY_CONTACT.md)
 
-## Links
+---
 
-- Website: https://kin2serviceslimited.co.uk
-- Book a demo: https://kin2serviceslimited.co.uk/book-demo
-- Contact: kin@kin2serviceslimited.com
+## What I work with
 
-## Note
+**Frontend**
+- TypeScript
+- React
+- Vite
+- Tailwind
 
-The main Kin2 Workforce product repository is private. This public repository acts as the public-facing overview and trust layer.
+**Backend**
+- Node.js
+- Express
+- PostgreSQL
+- Drizzle ORM
+
+**Integrations and tooling**
+- Stripe
+- SendGrid
+- Twilio
+- Google services
+- OpenAI and other AI providers
+
+---
+
+## What this GitHub represents
+
+This GitHub is mainly used for building and maintaining Kin2 and related founder-led technical work.
+
+Because the main product repository is private, this profile is intended to give a clear public snapshot of:
+- who I am
+- what I’m building
+- what Kin2 Workforce currently presents publicly
+- where to learn more about the product
+
+---
+
+## Current focus
+
+Right now I’m focused on:
+- improving release discipline and production readiness
+- strengthening workforce operations workflows
+- expanding reporting, compliance, and automation features
+- refining the public product and founder presence around Kin2
+
+---
+
+## Contact
+
+- Website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
+- Email: [kin@kin2serviceslimited.com](mailto:kin@kin2serviceslimited.com)
+- Demo: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
+
+---
+
+<div align="center">
+
+**Building practical systems for real-world workforce operations.**
+
+London, UK
+
+</div>
