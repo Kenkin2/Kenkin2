@@ -57,6 +57,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 - Why Kin2: [WHY_KIN2.md](WHY_KIN2.md)
 - Use Cases: [USECASES.md](USECASES.md)
 - Contact and Demo: [CONTACT_DEMO.md](CONTACT_DEMO.md)
+- Docs Index: [DOCS_INDEX.md](DOCS_INDEX.md)
 
 ---
 
