@@ -95,6 +95,7 @@ Because the main product repository is private, this profile is intended to give
 - what I’m building
 - the kinds of systems I work on
 - where to learn more about the product
+- Architecture overview: [ARCHITECTURE_OVERVIEW.md](ARCHITECTURE_OVERVIEW.md)
 
 The platform features, user roles, tech stack, and integrations described here reflect the current state of the private product codebase.
 
