@@ -59,6 +59,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 - Contact and Demo: [CONTACT_DEMO.md](CONTACT_DEMO.md)
 - Docs Index: [DOCS_INDEX.md](DOCS_INDEX.md)
 - Getting Started: [GETTING_STARTED.md](GETTING_STARTED.md)
+- Founder Note: [FOUNDER_NOTE.md](FOUNDER_NOTE.md)
 
 ---
 
