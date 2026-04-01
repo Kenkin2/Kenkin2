@@ -112,6 +112,7 @@ Right now I’m focused on:
 - Website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
 - Email: [kin@kin2serviceslimited.com](mailto:kin@kin2serviceslimited.com)
 - Demo: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
+- LinkedIn: [linkedin.com/in/kennedykintu](https://linkedin.com/in/kennedykintu)
 
 ---
 
