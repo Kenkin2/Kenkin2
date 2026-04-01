@@ -3,7 +3,7 @@
 # Hi, I'm Kennedy Kintu
 
 **Founder of Kin2 Services Limited**  
-Building software for workforce operations, compliance, scheduling, and AI-assisted business systems.
+**Building Kin2 Workforce — AI-powered workforce operations for UK shift-based SMEs.**
 
 [Website](https://kin2serviceslimited.co.uk) · [Book a demo](https://kin2serviceslimited.co.uk/book-demo) · [Email](mailto:kin@kin2serviceslimited.com) · [LinkedIn](https://linkedin.com/in/kennedykintu)
 
@@ -17,7 +17,7 @@ Building software for workforce operations, compliance, scheduling, and AI-assis
 
 Kin2 Workforce is an AI-powered workforce operations platform for UK shift-based SMEs.
 
-It is designed to help organisations manage:
+It helps organisations manage:
 - shifts and rota planning
 - attendance and clock-in workflows
 - timesheets and approvals
