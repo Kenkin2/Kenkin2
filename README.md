@@ -67,6 +67,11 @@ It is designed to help organisations manage:
 - Google services
 - OpenAI and other AI providers
 
+**Infrastructure and operations**
+- GitHub Actions
+- environment-based deployment pipelines
+- production and staging environment management
+
 ---
 
 ## What this GitHub represents
