@@ -35,7 +35,7 @@ Access to features is controlled by three roles:
 | Role | Access |
 | --- | --- |
 | **Admin** | Full system access — manages organisation settings, billing, all staff records, payroll exports, compliance tasks, reporting, automation, and AI tools |
-| **Manager** | Operational access — creates and manages rotas and shifts, reviews attendance, approves timesheets, accesses team reporting and communications |
+| **Manager** | Operational access — creates and manages rotas and shifts, reviews attendance, approves timesheets, views staff compliance status, accesses team reporting, communications, and AI workforce decision tools |
 | **Employee** | Self-service access — views own schedule, clocks in and out, submits timesheets, accesses personal records and communications |
 
 ---
