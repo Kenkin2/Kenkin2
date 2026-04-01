@@ -50,6 +50,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 - Public release notes: [RELEASES.md](RELEASES.md)
 - Legal overview: [LEGAL_OVERVIEW.md](LEGAL_OVERVIEW.md)
 - Security contact: [SECURITY_CONTACT.md](SECURITY_CONTACT.md)
+- Architecture overview: [ARCHITECTURE_OVERVIEW.md](ARCHITECTURE_OVERVIEW.md)
 
 ---
 
