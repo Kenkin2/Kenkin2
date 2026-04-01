@@ -55,6 +55,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 - FAQ: [FAQ.md](FAQ.md)
 - Roadmap: [ROADMAP.md](ROADMAP.md)
 - Why Kin2: [WHY_KIN2.md](WHY_KIN2.md)
+- Use Cases: [USECASES.md](USECASES.md)
 
 ---
 
