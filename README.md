@@ -22,6 +22,7 @@ It is designed to help organisations manage:
 - attendance and clock-in workflows
 - timesheets and approvals
 - payroll support and exports
+- billing and subscription management
 - staff records and compliance tasks
 - reporting and workforce analytics
 - communications and admin operations
