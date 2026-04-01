@@ -15,7 +15,7 @@ Building software for workforce operations, compliance, scheduling, and AI-assis
 
 ### Kin2 Workforce
 
-Kin2 Workforce is a workforce management platform for UK shift-based businesses.
+Kin2 Workforce is an AI-powered workforce operations platform for UK shift-based SMEs.
 
 It is designed to help organisations manage:
 - shifts and rota planning
@@ -39,6 +39,17 @@ It is designed to help organisations manage:
 - Live website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
 - Demo booking: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
 - Main codebase: private repository
+
+---
+
+## Public product snapshot
+
+This public repository now includes a cleaner product-facing trust layer for Kin2 Workforce.
+
+- Product status: [STATUS.md](STATUS.md)
+- Public release notes: [RELEASES.md](RELEASES.md)
+- Legal overview: [LEGAL_OVERVIEW.md](LEGAL_OVERVIEW.md)
+- Security contact: [SECURITY_CONTACT.md](SECURITY_CONTACT.md)
 
 ---
 
@@ -72,7 +83,7 @@ This GitHub is mainly used for building and maintaining Kin2 and related founder
 Because the main product repository is private, this profile is intended to give a clear public snapshot of:
 - who I am
 - what I’m building
-- the kinds of systems I work on
+- what Kin2 Workforce currently presents publicly
 - where to learn more about the product
 
 ---
