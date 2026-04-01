@@ -52,6 +52,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 - Security contact: [SECURITY_CONTACT.md](SECURITY_CONTACT.md)
 - Architecture overview: [ARCHITECTURE_OVERVIEW.md](ARCHITECTURE_OVERVIEW.md)
 - Industries: [INDUSTRIES.md](INDUSTRIES.md)
+- FAQ: [FAQ.md](FAQ.md)
 
 ---
 
