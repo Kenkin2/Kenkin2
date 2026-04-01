@@ -28,6 +28,16 @@ It is designed to help organisations manage:
 - automation of routine workforce processes
 - AI-assisted tools for workforce decision support
 
+**User roles and access**
+
+Access to features is controlled by three roles:
+
+| Role | Access |
+| --- | --- |
+| **Admin** | Full system access — manages organisation settings, billing, all staff records, payroll exports, compliance tasks, reporting, automation, and AI tools |
+| **Manager** | Operational access — creates and manages rotas and shifts, reviews attendance, approves timesheets, accesses team reporting and communications |
+| **Employee** | Self-service access — views own schedule, clocks in and out, submits timesheets, accesses personal records and communications |
+
 ---
 
 ## Who Kin2 is built for
