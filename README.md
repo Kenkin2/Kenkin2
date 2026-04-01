@@ -95,6 +95,8 @@ Because the main product repository is private, this profile is intended to give
 - the kinds of systems I work on
 - where to learn more about the product
 
+The platform features, user roles, tech stack, and integrations described here reflect the current state of the private product codebase.
+
 ---
 
 ## Current focus
