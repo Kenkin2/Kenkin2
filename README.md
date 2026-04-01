@@ -26,6 +26,8 @@ It is designed to help organisations manage:
 - communications and admin operations
 - AI-assisted tools for workforce decision support
 
+---
+
 ## Who Kin2 is built for
 
 **Current sectors of focus**
