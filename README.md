@@ -82,6 +82,7 @@ Access to features is controlled by three roles:
 - GitHub Actions
 - environment-based deployment pipelines
 - production and staging environment management
+- code review and pull request workflows
 
 ---
 
