@@ -53,7 +53,7 @@ Access to features is controlled by three roles:
 **Project links**
 - Live website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
 - Demo booking: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
-- Main codebase: private repository
+- Main codebase: [Kenkin2/Kin2Workforce](https://github.com/Kenkin2/Kin2Workforce)
 
 ---
 
