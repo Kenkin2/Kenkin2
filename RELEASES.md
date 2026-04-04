@@ -3,16 +3,25 @@
 ## v3.8.0 — 2 April 2026
 
 **Summary**
-Enterprise SSO + Shift Fill SMS + Developer API
+Enterprise SSO + Shift Fill SMS + Developer API + Compliance Tools
 
 **Highlights**
 - Enterprise SSO: SAML 2.0 SP-initiated flow with JIT user provisioning on Growth and Scale plans
 - Shift-Fill Engine: Availability-aware worker cover with Twilio SMS/WhatsApp messaging and one-tap shift acceptance
-- Developer API: Public REST API with OAuth-compatible bearer tokens, 54 documented endpoints, rate limiting (100 req/15min), and full OpenAPI spec
+- Developer API: Public REST API with OAuth-compatible bearer tokens, 54 documented endpoints, API key management, rate limiting (100 req/15min), and full OpenAPI spec
+- HMRC RTI Direct Submission: Full Payment Submission (FPS) and Employer Payment Summary (EPS) sent directly to HMRC
+- TUPE Transfer Management: End-to-end TUPE transfer workflow with worker consent tracking and timeline management
+- AWR Compliance Tracker: 12-week qualifying period monitoring for Agency Workers Regulations compliance
+- IR35 Status Checker: 15-question weighted assessment engine for contractor tax status determination (Inside/Outside/Borderline)
+- Observability Enhancements: Chatwoot live support integration and PostHog product analytics pipeline added
 - Improved Platform Intelligence: All 5 predictive analytics cards operational with correct SQL queries
 
+**Critical Fixes**
+- Audit log multi-tenant isolation scoping: Fixed cross-organisation data leakage in audit trail queries
+- FCA/AML production gating: Regulated financial features now require explicit plan-level activation before exposure
+
 **Why it matters**
-Enterprise customers can now use their corporate identity provider. Shift-fill automation cuts hiring time from hours to minutes. Developers can integrate Kin2 directly into their systems.
+Enterprise customers can now use their corporate identity provider. Shift-fill automation cuts hiring time from hours to minutes. Developers can integrate Kin2 directly into their systems. Payroll teams submit RTI to HMRC without leaving the platform. Workforce operations now include full UK compliance tooling for contractors, agency workers, and TUPE transfers.
 
 ---
 

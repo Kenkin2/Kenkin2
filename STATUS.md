@@ -1,6 +1,6 @@
 # Current Status
 
-_Last updated: 1 April 2026_
+_Last updated: 2 April 2026_
 
 ## Live now
 
@@ -10,20 +10,22 @@ _Last updated: 1 April 2026_
 - Payroll Calculation support workflows
 - Staff Management
 - Compliance Engine workflows
-- AWR Compliance tracking support
-- IR35 support workflows
+- AWR Compliance Tracker (12-week qualifying period monitoring)
+- IR35 Status Checker (weighted assessment engine)
 - Billing & Subscriptions
 - Communications
+- Enterprise SSO (SAML 2.0 SP-Initiated)
+- Shift-Fill Engine (Twilio SMS/WhatsApp)
+- Developer API (Public REST API with key management & rate limiting)
+- HMRC RTI Direct Submission (FPS & EPS)
+- TUPE Transfer Management
 
 ## Planned / In Progress
 
 - Demand Forecasting
-- Shift-Fill Engine
 - RTW Document AI
 - Fraud Detection
-- Enterprise SSO
 - Multi-location Dashboard
-- Public Developer API
 - Webhooks / Automation
 
 ## Contact

@@ -48,6 +48,7 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 
 - Product status: [STATUS.md](STATUS.md)
 - Public release notes: [RELEASES.md](RELEASES.md)
+- Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Legal overview: [LEGAL_OVERVIEW.md](LEGAL_OVERVIEW.md)
 - Security contact: [SECURITY_CONTACT.md](SECURITY_CONTACT.md)
 - Architecture overview: [ARCHITECTURE_OVERVIEW.md](ARCHITECTURE_OVERVIEW.md)
@@ -82,9 +83,13 @@ This public repository now includes a cleaner product-facing trust layer for Kin
 **Integrations and tooling**
 - Stripe
 - SendGrid
-- Twilio
+- Twilio (SMS/WhatsApp)
 - Google services
 - OpenAI and other AI providers
+- SAML 2.0 (Enterprise SSO)
+- HMRC RTI
+- Chatwoot
+- PostHog
 
 ---
 
