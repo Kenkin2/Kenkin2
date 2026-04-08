@@ -1,35 +1,46 @@
-# Current Status
+# Platform Status
 
-_Last updated: 2 April 2026_
+_Last updated: 8 April 2026 · Current version: v3.9.6_
 
 ## Live now
 
-- Shift Scheduling
-- GPS Clock-in / out
-- Timesheet Management
-- Payroll Calculation support workflows
-- Staff Management
-- Compliance Engine workflows
-- AWR Compliance Tracker (12-week qualifying period monitoring)
-- IR35 Status Checker (weighted assessment engine)
-- Billing & Subscriptions
-- Communications
-- Enterprise SSO (SAML 2.0 SP-Initiated)
-- Shift-Fill Engine (Twilio SMS/WhatsApp)
-- Developer API (Public REST API with key management & rate limiting)
-- HMRC RTI Direct Submission (FPS & EPS)
-- TUPE Transfer Management
+### Core workforce operations
+- Shift scheduling — drag-and-drop rota builder with conflict detection
+- GPS clock-in / clock-out — location-verified attendance, geofence alerts
+- Timesheet management — digital approval chains, overtime tracking
+- Staff records — employment history, documents, emergency contacts
+- Communications — team messaging, announcements, shift notifications
 
-## Planned / In Progress
+### Payroll and compliance
+- Payroll calculation support workflows
+- HMRC RTI Direct Submission — Full Payment Submission (FPS) and Employer Payment Summary (EPS)
+- NLW/NMW enforcement — **April 2026 rates** (£13.03/hr NLW, £10.66 18-20, £7.79 16-17)
+- AWR Compliance Tracker — 12-week qualifying period monitoring for agency workers
+- IR35 Status Checker — 15-question weighted contractor tax status assessment
+- TUPE Transfer Management — end-to-end transfer workflows with worker consent tracking
+- GDPR / UK GDPR workflows — data export, right to erasure, consent records
+- Right-to-Work document verification and expiry tracking
+- WTR monitoring — 48-hour opt-out, rest breaks, holiday accrual
 
-- Demand Forecasting
-- RTW Document AI
-- Fraud Detection
-- Multi-location Dashboard
-- Webhooks / Automation
+### Platform features
+- Billing and subscriptions — Starter · Growth · Scale plans via Stripe
+- Enterprise SSO — SAML 2.0 SP-initiated with JIT user provisioning (Growth / Scale)
+- Shift-fill automation — Twilio SMS/WhatsApp cover requests, one-tap acceptance
+- Developer API — public REST API, 54 documented endpoints, key management, rate limiting
+- Multi-location dashboard — cross-site analytics and reporting
+- AI workforce agents — 14 autonomous agents (demand forecasting, fraud detection, document intelligence, compliance monitoring, and more)
+- Demand forecasting — AI-powered shift demand predictions from historical patterns
+- RTW Document AI — automated Right-to-Work document data extraction
+- Timesheet fraud detection — GPS spoofing and pattern-based anomaly detection
+
+### In active development
+- Webhooks / automation — rule-based event triggers and delivery infrastructure
+- Advanced reporting — organisation-level analytics and compliance dashboards
+
+---
 
 ## Contact
 
-- Website: https://kin2serviceslimited.co.uk
-- Demo: https://kin2serviceslimited.co.uk/book-demo
-- Contact: kin@kin2serviceslimited.com
+- Website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
+- Demo: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
+- Email: [kin@kin2serviceslimited.com](mailto:kin@kin2serviceslimited.com)
