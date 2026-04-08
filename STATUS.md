@@ -1,6 +1,6 @@
 # Platform Status
 
-_Last updated: 8 April 2026 · Current version: v3.9.6_
+_Last updated: 8 April 2026 · Current version: v3.9.8_
 
 ## Live now
 
@@ -33,6 +33,16 @@ _Last updated: 8 April 2026 · Current version: v3.9.6_
 - RTW Document AI — automated Right-to-Work document data extraction
 - Timesheet fraud detection — GPS spoofing and pattern-based anomaly detection
 
+### GitHub and DevOps (v3.9.8)
+- 19 GitHub Actions workflows — full CI/CD pipeline with concurrency controls, timeouts, and job summaries
+- NLW gate — CI fails if any code path would pay below HMRC statutory minimums
+- Dependency review — PRs blocked on HIGH/CRITICAL vulnerabilities or viral (GPL) licences
+- SBOM generation — SPDX-JSON and CycloneDX attached to every GitHub Release
+- SLSA Level 2 build provenance attestation on every release artifact
+- App-to-GitHub integration — compliance schedulers open tracked Issues directly from the running app
+- production + staging deployment environments with protected secrets
+- Projects v2 board: [Kin2 Workforce Roadmap](https://github.com/users/Kenkin2/projects/2)
+
 ### In active development
 - Webhooks / automation — rule-based event triggers and delivery infrastructure
 - Advanced reporting — organisation-level analytics and compliance dashboards
@@ -44,3 +54,4 @@ _Last updated: 8 April 2026 · Current version: v3.9.6_
 - Website: [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk)
 - Demo: [Book a demo](https://kin2serviceslimited.co.uk/book-demo)
 - Email: [kin@kin2serviceslimited.com](mailto:kin@kin2serviceslimited.com)
+
