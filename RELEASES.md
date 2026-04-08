@@ -4,6 +4,37 @@ _Full changelog: [CHANGELOG.md](CHANGELOG.md)_
 
 ---
 
+## v3.9.8 — 8 April 2026
+
+**Summary**
+GitHub Actions hardening complete — all 21 workflows production-ready
+
+**Highlights**
+- All 21 GitHub Actions workflows now have concurrency controls, explicit `timeout-minutes`, and `GITHUB_STEP_SUMMARY` output
+- Secret Guard (`secret-guard.yml`) hardened with concurrency and timeout
+- CodeQL code scanning enabled — GHAS activated on the private repository; runs weekly (Tuesdays 03:00 UTC) and on every PR
+- Release artifacts: SBOM (SPDX-JSON + CycloneDX) and SLSA Level 2 build provenance attestation attached to every GitHub Release
+- Dependency Review gate on all PRs: blocks HIGH/CRITICAL vulnerabilities and viral licences (GPL/AGPL/LGPL)
+- App-to-GitHub integration: compliance schedulers can open tracked GitHub Issues directly from the running app via `POST /api/github/dispatch`
+- GitHub Environments: `production` and `staging` environments created with protected secrets
+- FUNDING.yml: "Sponsor this project" button now visible on the repository page
+- Projects v2 board: [Kin2 Workforce Roadmap](https://github.com/users/Kenkin2/projects/2)
+
+---
+
+## v3.9.7 — 8 April 2026
+
+**Summary**
+Compliance enforcement automation + security audit hardening
+
+**Highlights**
+- Compliance check workflow (`compliance-check.yml`): NLW rate assertion gate, CRITICAL vulnerability gate, GPL licence gate — all block merge on failure
+- Security audit workflow (`security-audit.yml`): weekly npm audit, opens a deduplicated GitHub Issue when HIGH/CRITICAL vulnerabilities are found
+- `scripts/assert-nlw-rates.mjs`: validates all NLW/NMW constants in the codebase match HMRC April 2026 statutory rates
+- Compliance schedulers wired on server boot — monitors production data and dispatches alerts to GitHub
+
+---
+
 ## v3.9.6 — 8 April 2026
 
 **Summary**
@@ -13,7 +44,7 @@ CI/CD automation hardening + auto-merge safety fix
 - Auto-merge safety fix: Dependabot major-update PRs previously received both `copilot-review` and `major-update` labels — the Copilot auto-merge job would have merged them without human review. Fixed with an explicit guard condition.
 - Dependabot reviewer: Replaced non-existent `kin2-team` reviewer with `Kenkin2` (the actual owner) across all three dependency ecosystems (npm, docker, GitHub Actions).
 - Deploy alert system: Moved alerting inline into `deploy.yml` (eliminating cross-workflow dependency), added `issues: write` permission, inline alert distinguishes token expiry vs. other failures.
-- NLW/NMW compliance: Updated UK statutory rates to **April 2026** across the compliance engine, API responses, and frontend. Rates: 21+ £13.03, 18–20 £10.66, 16–17 £7.79, Apprentice £7.79. Reduced npm HIGH vulnerabilities from 10 to 1 via `npm audit fix`.
+- NLW/NMW compliance: Updated UK statutory rates to **April 2026** across the compliance engine, API responses, and frontend. Rates: 21+ £13.03, 18-20 £10.66, 16-17 £7.79, Apprentice £7.79. Reduced npm HIGH vulnerabilities from 10 to 1 via `npm audit fix`.
 
 ---
 
@@ -105,3 +136,4 @@ Trust and conversion — commercial polish
 ---
 
 _For older releases, see [CHANGELOG.md](CHANGELOG.md)._
+
