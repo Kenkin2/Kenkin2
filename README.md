@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Kin2_Workforce-v3.9.6-0d47a1?style=for-the-badge&logoColor=white" alt="Version">
+<img src="https://img.shields.io/badge/Kin2_Workforce-v3.9.8-0d47a1?style=for-the-badge&logoColor=white" alt="Version">
 <img src="https://img.shields.io/badge/Status-Live-2e7d32?style=for-the-badge" alt="Status">
 <img src="https://img.shields.io/badge/NLW_Compliant-April_2026-1565c0?style=for-the-badge" alt="NLW Compliant">
 <img src="https://img.shields.io/badge/UK_GDPR-Compliant-6a1a7a?style=for-the-badge" alt="GDPR">
@@ -24,7 +24,7 @@ Building AI-powered workforce management for UK shift-based SMEs — one platfor
 | | |
 |---|---|
 | **Live at** | [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk) |
-| **Version** | v3.9.6 · [Release notes](RELEASES.md) · [Full changelog](CHANGELOG.md) |
+| **Version** | v3.9.8 · [Release notes](RELEASES.md) · [Full changelog](CHANGELOG.md) |
 | **Stage** | Live · Customer acquisition |
 | **Target** | UK SMEs managing 5–250 shift-based staff |
 | **Sectors** | Security · Care · Cleaning · Hospitality · Charities |
@@ -40,6 +40,7 @@ Building AI-powered workforce management for UK shift-based SMEs — one platfor
 - **Enterprise SSO** — SAML 2.0 SP-initiated flow with JIT user provisioning
 - **Shift-fill automation** — Twilio SMS/WhatsApp cover requests with one-tap acceptance
 - **Developer API** — public REST API with 54 documented endpoints and key management
+- **CI/CD & security** — 21 GitHub Actions workflows, CodeQL code scanning, SBOM (SPDX-JSON + CycloneDX) and SLSA Level 2 build provenance on every release, Dependency Review gate blocking HIGH/CRITICAL vulnerabilities
 
 ---
 
