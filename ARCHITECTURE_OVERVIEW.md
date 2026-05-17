@@ -20,7 +20,7 @@ Kin2 Workforce is a multi-tenant SaaS platform. Each organisation operates in co
 | **AI / LLMs** | OpenAI GPT-4o · Anthropic Claude · Google Gemini · Perplexity | Multi-model routing via AI orchestrator |
 | **Identity** | SAML 2.0 | Enterprise SSO, JIT user provisioning |
 | **HMRC** | RTI Direct Submission | Full Payment Submission (FPS), Employer Payment Summary (EPS) |
-| **Deployment** | Cloud hosting | kin2serviceslimited.co.uk — production and staging environments |
+| **Deployment** | Fly.io (London — LHR) | kin2serviceslimited.co.uk — production and staging environments, UK data residency |
 | **CI/CD** | GitHub Actions | 21 workflows: secret guard, deploy, monitor, CodeQL, SBOM, SLSA, compliance gate, auto-merge |
 
 ## Key architectural decisions
@@ -84,6 +84,10 @@ shared/
   copilot-instructions.md
   claude-instructions.md
 ```
+
+## Deployment
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the full deployment guide — Dockerfile, Fly.io configuration, GitHub Actions integration, environment variables, and rollback procedure.
 
 ## Compliance certifications
 
