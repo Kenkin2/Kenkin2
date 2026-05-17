@@ -68,6 +68,7 @@ Building AI-powered workforce management for UK shift-based SMEs — one platfor
 | [Changelog](CHANGELOG.md) | Full version history |
 | [Roadmap](ROADMAP.md) | Near-term and planned features |
 | [Architecture](ARCHITECTURE_OVERVIEW.md) | System design and tech stack |
+| [Deployment](DEPLOYMENT.md) | Fly.io setup, Dockerfile, environment variables |
 | [Industries](INDUSTRIES.md) | Sector-specific capabilities |
 | [Use Cases](USECASES.md) | Workflow examples |
 | [Why Kin2](WHY_KIN2.md) | Product rationale |

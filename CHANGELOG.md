@@ -4,6 +4,92 @@ All notable changes to Kin2 Workforce are documented here.
 
 ---
 
+## v3.21.0 — May 2026
+
+### New Features
+
+**AI and intelligence**
+- Operational graph — tracks dependencies and real-time status across workforce operations
+- Skill ecosystem — worker skill profiles with proficiency levels; skills used as a scheduling matching input
+- RAG (retrieval-augmented generation) — document intelligence enhanced with contextual retrieval for right-to-work and compliance documents
+- Ops agent added as 6th registered AI agent (full agent set: compliance, payroll, scheduling, tender, grant, founder oversight)
+
+**Data platform**
+- H3 spatial indexing — GPS clock-in accuracy improved with Uber H3 hex-grid indexing; enables geofence queries at configurable resolutions
+- Columnar analytics — time-series aggregation for shift coverage, payroll cost, and NLW exposure reports
+- Event bus — async internal messaging decouples compliance alerts from the real-time request path
+- Read replicas — database read traffic offloaded to replica; reduces latency on analytics-heavy queries
+
+**API and developer**
+- Cursor-based pagination on all list endpoints — replaces offset-based paging; consistent performance on large datasets
+
+---
+
+## v3.9.8 — 8 April 2026
+
+### DevOps and Security
+- All 21 GitHub Actions workflows hardened with concurrency controls, explicit `timeout-minutes`, and `GITHUB_STEP_SUMMARY` output
+- Secret Guard (`secret-guard.yml`) hardened with concurrency and timeout
+- CodeQL code scanning enabled (GHAS) — runs weekly on Tuesdays 03:00 UTC and on every PR
+- Release artifacts: SBOM (SPDX-JSON + CycloneDX) and SLSA Level 2 build provenance attached to every GitHub Release
+- Dependency Review gate on all PRs: blocks HIGH/CRITICAL vulnerabilities and viral licences (GPL/AGPL/LGPL)
+- App-to-GitHub integration: compliance schedulers open tracked GitHub Issues from the running app via `POST /api/github/dispatch`
+- GitHub Environments: `production` and `staging` environments with protected secrets
+- FUNDING.yml added; Projects v2 board published
+
+---
+
+## v3.9.7 — 8 April 2026
+
+### Compliance and Security
+- Compliance check workflow (`compliance-check.yml`): NLW rate assertion gate, CRITICAL vulnerability gate, GPL licence gate — all block merge on failure
+- Security audit workflow (`security-audit.yml`): weekly npm audit, opens a deduplicated GitHub Issue when HIGH/CRITICAL vulnerabilities are found
+- `scripts/assert-nlw-rates.mjs`: validates all NLW/NMW constants match HMRC April 2026 statutory rates
+- Compliance schedulers wired on server boot
+
+---
+
+## v3.9.6 — 8 April 2026
+
+### Bug Fixes
+- Auto-merge safety fix: Dependabot major-update PRs now blocked from auto-merge without human review
+- Dependabot reviewer corrected to `Kenkin2` across all three dependency ecosystems (npm, docker, GitHub Actions)
+- Deploy alert moved inline into `deploy.yml`, eliminating cross-workflow dependency
+
+### Compliance
+- NLW/NMW rates updated to April 2026 statutory rates: 21+ £13.03, 18–20 £10.66, 16–17 £7.79, Apprentice £7.79
+- npm audit: reduced HIGH vulnerabilities from 10 to 1 via `npm audit fix`
+
+---
+
+## v3.9.5 — 8 April 2026
+
+### New Features
+- Annual NLW update workflow (`nlw-update.yml`): fires every 1 April and 1 November, opens a GitHub Issue with update checklist, auto-assigns Copilot, deduplicates
+
+### Security
+- npm audit: resolved 9 vulnerabilities, reducing HIGH count from 10 to 1
+
+---
+
+## v3.9.4 — 8 April 2026
+
+### Bug Fixes
+- Fixed `deploy-alert.yml` missing `actions: read` permission (previously caused all deploy alerts to fail silently)
+- Deploy failure alerts moved from separate workflow into `deploy.yml` as inline step
+
+---
+
+## v3.9.3 — 7 April 2026
+
+### Maintenance
+- Merged Dependabot PRs: Vite (#215) and drizzle-orm (#216) — patch/minor security updates
+- Secret Guard false positive fix: `.env` pattern updated to avoid flagging example files
+- Copilot auto-merge actor corrected (`Copilot`, not `copilot[bot]`)
+- Kin2 Monitor cron updated to every 30 minutes
+
+---
+
 ## v3.8.0 — 2 April 2026
 
 ### New Features
@@ -53,7 +139,7 @@ All notable changes to Kin2 Workforce are documented here.
 
 **Critical**
 - Audit log multi-tenant isolation scoping: Resolved an issue where audit trail queries could expose records across organisation boundaries in shared-tenant deployments
-- FCA/AML production gating: Regulated financial features (FCA-linked checks, AML transaction screening) now require explicit plan-level activation; features are fully gated in the UI and API until enabled by an authorised admin
+- FCA/AML production gating: Regulated financial features now require explicit plan-level activation; features are fully gated in the UI and API until enabled by an authorised admin
 
 **Platform**
 - Predictive Intelligence SQL: Corrected FROM clause aliasing; all 5 prediction cards now return data correctly
@@ -62,7 +148,7 @@ All notable changes to Kin2 Workforce are documented here.
 ### Security
 
 - npm audit: 0 vulnerabilities across all production dependencies
-- HMAC-SHA256 webhook signatures with timestamp and nonce to prevent replay attacks (applied to Developer API callbacks)
+- HMAC-SHA256 webhook signatures with timestamp and nonce to prevent replay attacks
 - API key hashing: Keys stored as bcrypt hashes; plaintext only shown once at creation
 
 ---
