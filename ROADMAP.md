@@ -1,23 +1,65 @@
-# ROADMAP
+# Roadmap
 
-## In Progress
-- Demand Forecasting: Implemented and in beta
-- RTW Document AI: Implemented with document tracking
-- Fraud Detection: Implemented with AI pattern detection
-- Multi-location Dashboard: Implemented and functional
-- Webhooks / Automation: In active development for v3.9.0
+_Last updated: May 2026 · Current version: v3.9.8_
 
-## Near-term Focus
-- Webhooks / Automation: Rule-based event triggers and delivery infrastructure
-- Advanced Reporting: Organisation-level analytics and compliance dashboards
-- Marketplace Integrations: Third-party connector framework
+For what is live today, see [STATUS.md](STATUS.md). For version history, see [RELEASES.md](RELEASES.md).
+
+---
+
+## In active development
+
+### Webhooks and automation
+Rule-based event triggers and outbound delivery infrastructure. Allows organisations to connect Kin2 Workforce events (shift published, timesheet approved, compliance alert, clock-in) to external systems without polling the API.
+
+### Advanced reporting
+Organisation-level analytics and compliance dashboards. Covers workforce cost breakdowns, shift coverage rates, NLW exposure reports, and AWR qualifying period summaries across all locations.
+
+---
+
+## Next up
+
+### Mobile app (iOS and Android)
+Native mobile application for field workers. Priority features: GPS clock-in / clock-out, shift viewing, timesheet submission, and shift-fill one-tap acceptance. Required to replace browser-based clock-in for care and security staff with limited connectivity.
+
+### Offline mode
+Clock-in and shift data sync on reconnect. Targets care and security workers in low-signal environments where a browser-based GPS session is not reliable.
+
+### Marketplace integrations
+Third-party connector framework for accounting (Xero, QuickBooks), HR (BambooHR), and payroll (Sage, IRIS). Builds on the existing public API foundation.
+
+### API expansion
+Additional endpoints beyond the current 54, covering webhooks management, bulk operations, and compliance report exports. Full OpenAPI 3.0 spec maintained.
+
+---
+
+## Future
+
+### Biometric and NFC clock-in
+Alternative to GPS-only verification for high-security sites or environments where GPS spoofing risk is elevated. Complements the existing fraud detection layer.
+
+### Customer webhook portal
+Self-service UI for configuring and monitoring webhook endpoints, delivery logs, and retry history. Builds on the Webhooks and automation work above.
+
+---
 
 ## Completed
 
-- Enterprise SSO (SAML 2.0 SP-Initiated): Delivered in v3.8.0 — JIT user provisioning on Growth and Scale plans
-- Shift-Fill Engine (SMS/WhatsApp): Delivered in v3.8.0 — Availability-aware cover with Twilio messaging and one-tap acceptance
-- Developer API: Delivered in v3.8.0 — Public REST API with key management, rate limiting, and full OpenAPI spec
-- HMRC RTI Direct Submission: Delivered in v3.8.0 — FPS & EPS sent directly to HMRC
-- TUPE Transfer Management: Delivered in v3.8.0 — End-to-end transfer workflow with worker consent tracking
-- AWR Compliance Tracker: Delivered in v3.7.7 — 12-week qualifying period monitoring
-- IR35 Status Checker: Delivered in v3.7.7 — Weighted assessment engine for contractor tax status
+| Feature | Version | Notes |
+|---|---|---|
+| GitHub Actions hardening — 21 workflows, SBOM, SLSA Level 2, CodeQL | v3.9.8 | |
+| Compliance enforcement automation — NLW gate, vulnerability gate, GPL licence gate | v3.9.7 | |
+| Auto-merge safety fix, NLW/NMW April 2026 rates, deploy alert system | v3.9.6 | |
+| Annual NLW update workflow, security vulnerability reduction | v3.9.5 | |
+| CI pipeline stability, Dependabot updates, Secret Guard fixes | v3.9.3 | |
+| Enterprise SSO — SAML 2.0 SP-initiated, JIT user provisioning | v3.8.0 | Growth and Scale plans |
+| Shift-Fill Engine — Twilio SMS/WhatsApp, one-tap acceptance | v3.8.0 | |
+| Developer API — 54 endpoints, key management, rate limiting, OpenAPI spec | v3.8.0 | |
+| HMRC RTI Direct Submission — FPS and EPS | v3.8.0 | |
+| TUPE Transfer Management — end-to-end workflow, worker consent tracking | v3.8.0 | |
+| AI workforce agents — 14 autonomous agents (demand forecasting, fraud detection, document intelligence, compliance monitoring) | v3.8.0 | |
+| Multi-location dashboard — cross-site analytics and reporting | v3.8.0 | |
+| AWR Compliance Tracker — 12-week qualifying period monitoring | v3.7.7 | |
+| IR35 Status Checker — 15-question weighted assessment | v3.7.7 | |
+| RTW Document AI — automated right-to-work data extraction | v3.7.7 | |
+| Timesheet Fraud Detection — GPS spoofing and pattern anomaly detection | v3.7.7 | |
+| Demand Forecasting — AI-powered shift demand predictions | v3.7.7 | |
