@@ -14,7 +14,7 @@ _Last updated: 8 April 2026 · Current version: v3.9.8_
 ### Payroll and compliance
 - Payroll calculation support workflows
 - HMRC RTI Direct Submission — Full Payment Submission (FPS) and Employer Payment Summary (EPS)
-- NLW/NMW enforcement — **April 2026 rates** (£13.03/hr NLW, £10.66 18-20, £7.79 16-17)
+- NLW/NMW enforcement — **April 2026 rates** (£13.03/hr 21+, £10.66 18–20, £7.79 16–17, £7.79 Apprentice)
 - AWR Compliance Tracker — 12-week qualifying period monitoring for agency workers
 - IR35 Status Checker — 15-question weighted contractor tax status assessment
 - TUPE Transfer Management — end-to-end transfer workflows with worker consent tracking
@@ -34,7 +34,7 @@ _Last updated: 8 April 2026 · Current version: v3.9.8_
 - Timesheet fraud detection — GPS spoofing and pattern-based anomaly detection
 
 ### GitHub and DevOps (v3.9.8)
-- 19 GitHub Actions workflows — full CI/CD pipeline with concurrency controls, timeouts, and job summaries
+- 21 GitHub Actions workflows — full CI/CD pipeline with concurrency controls, timeouts, and job summaries
 - NLW gate — CI fails if any code path would pay below HMRC statutory minimums
 - Dependency review — PRs blocked on HIGH/CRITICAL vulnerabilities or viral (GPL) licences
 - SBOM generation — SPDX-JSON and CycloneDX attached to every GitHub Release

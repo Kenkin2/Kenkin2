@@ -1,6 +1,6 @@
 # Architecture Overview
 
-_Version: v3.9.6 · Last updated: April 2026_
+_Version: v3.9.8 · Last updated: May 2026_
 
 ## System design
 
@@ -20,8 +20,8 @@ Kin2 Workforce is a multi-tenant SaaS platform. Each organisation operates in co
 | **AI / LLMs** | OpenAI GPT-4o · Anthropic Claude · Google Gemini · Perplexity | Multi-model routing via AI orchestrator |
 | **Identity** | SAML 2.0 | Enterprise SSO, JIT user provisioning |
 | **HMRC** | RTI Direct Submission | Full Payment Submission (FPS), Employer Payment Summary (EPS) |
-| **Deployment** | Replit | Primary hosting at kin2serviceslimited.co.uk |
-| **CI/CD** | GitHub Actions | 16 workflows: secret guard, deploy, monitor, CodeQL, auto-merge |
+| **Deployment** | Fly.io (London — LHR) | kin2serviceslimited.co.uk — production and staging environments, UK data residency |
+| **CI/CD** | GitHub Actions | 21 workflows: secret guard, deploy, monitor, CodeQL, SBOM, SLSA, compliance gate, auto-merge |
 
 ## Key architectural decisions
 
@@ -47,14 +47,21 @@ UK employment law compliance is enforced at the data layer, not the UI layer:
 ### CI/CD pipeline
 Every push to `main` runs through:
 1. Secret Guard (hard gate — blocks deploy if live keys found in source)
-2. Deploy to Production (Replit trigger)
-3. Health check (kin2serviceslimited.co.uk + kin2workforce.replit.app)
-4. Inline deploy alert (opens GitHub Issue + assigns Copilot on failure)
+2. Dependency Review (blocks HIGH/CRITICAL CVEs and GPL/AGPL/LGPL licences)
+3. Compliance gate — NLW rate assertion, CRITICAL vulnerability gate
+4. Deploy to production and staging environments
+5. Health check (kin2serviceslimited.co.uk)
+6. Inline deploy alert (opens GitHub Issue + assigns Copilot on failure)
+
+Every release:
+- SBOM generated in SPDX-JSON and CycloneDX formats, attached to GitHub Release
+- SLSA Level 2 build provenance attestation attached to every release artifact
 
 Scheduled:
 - Health monitor every 30 minutes
-- NLW rate review reminder every 1 April
-- CodeQL static analysis weekly
+- NLW rate review reminder every 1 April and 1 November
+- Security audit (npm audit) weekly — opens deduplicated GitHub Issue on HIGH/CRITICAL
+- CodeQL static analysis weekly (Tuesdays 03:00 UTC) and on every PR
 - Stale issue/PR cleanup daily
 
 ## Repository structure
@@ -73,10 +80,14 @@ server/         Express backend (TypeScript)
 shared/
   schema.ts     Drizzle ORM schema + Zod types (single source of truth)
 .github/
-  workflows/    16 CI/CD pipelines
+  workflows/    21 CI/CD pipelines
   copilot-instructions.md
   claude-instructions.md
 ```
+
+## Deployment
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the full deployment guide — Dockerfile, Fly.io configuration, GitHub Actions integration, environment variables, and rollback procedure.
 
 ## Compliance certifications
 
