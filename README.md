@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Kin2_Workforce-v3.9.8-0d47a1?style=for-the-badge&logoColor=white" alt="Version">
-<img src="https://img.shields.io/badge/Status-Live-2e7d32?style=for-the-badge" alt="Status">
-<img src="https://img.shields.io/badge/NLW_Compliant-April_2026-1565c0?style=for-the-badge" alt="NLW Compliant">
-<img src="https://img.shields.io/badge/UK_GDPR-Compliant-6a1a7a?style=for-the-badge" alt="GDPR">
+<img src="https://img.shields.io/badge/Kin2_Workforce-Pilot_Preparation-0d47a1?style=for-the-badge&logoColor=white" alt="Stage">
+<img src="https://img.shields.io/badge/NLW_Compliant-April_2026-1565c0?style=for-the-badge" alt="NLW April 2026">
+<img src="https://img.shields.io/badge/GDPR-Aware_Workflows-6a1a7a?style=for-the-badge" alt="GDPR-aware">
+<img src="https://img.shields.io/badge/UK-Only-c62828?style=for-the-badge" alt="UK">
 
 # Kennedy Kintu
 
 **Founder & CTO · Kin2 Services Limited**
 
-Building AI-powered workforce management for UK shift-based SMEs — one platform for scheduling, compliance, payroll, and operations.
+Building AI-powered workforce management for UK shift-based SMEs — one platform for scheduling, compliance, payroll preparation, and operations.
 
 [Website](https://kin2serviceslimited.co.uk) · [Book a demo](https://kin2serviceslimited.co.uk/book-demo) · [Email](mailto:kin@kin2serviceslimited.com) · [LinkedIn](https://linkedin.com/in/kennedykintu)
 
@@ -19,28 +19,29 @@ Building AI-powered workforce management for UK shift-based SMEs — one platfor
 
 ## Kin2 Workforce
 
-**Kin2 Workforce** replaces disconnected spreadsheets, WhatsApp rotas, and fragmented payroll tools for UK shift-based businesses. It covers every stage of the workforce lifecycle — from publishing a rota to submitting RTI to HMRC — in a single multi-tenant SaaS platform.
+**Kin2 Workforce** replaces disconnected spreadsheets, WhatsApp rotas, and fragmented payroll tools for UK shift-based businesses. It covers every stage of the workforce lifecycle — from publishing a rota to payroll preparation and compliance tracking — in a single multi-tenant SaaS platform.
 
 | | |
 |---|---|
 | **Live at** | [kin2serviceslimited.co.uk](https://kin2serviceslimited.co.uk) |
-| **Version** | v3.9.8 · [Release notes](RELEASES.md) · [Full changelog](CHANGELOG.md) |
-| **Stage** | Live · Customer acquisition |
+| **Stage** | Production stabilisation · Controlled pilot preparation |
 | **Target** | UK SMEs managing 5–250 shift-based staff |
 | **Sectors** | Security · Care · Cleaning · Hospitality · Charities |
 
+> **Honest status (May 2026):** The platform is built and running on Fly.io (London, lhr region). We are completing production stability validation and preparing for a controlled pilot customer. Some advanced modules are implemented and in internal testing — they should not be treated as externally certified or pilot-proven until we publish QA evidence.
+
 ### What it does
 
-- **Shift scheduling** — drag-and-drop rota builder with conflict detection and mobile publishing
-- **GPS clock-in / clock-out** — location-verified attendance with geofence alerts
-- **Timesheet management** — digital approval chains, overtime tracking, fraud detection
-- **Payroll support** — HMRC RTI (FPS & EPS) direct submission, AWR 12-week tracking, IR35 checker
-- **Compliance engine** — NLW/NMW enforcement (April 2026 rates), GDPR workflows, right-to-work tracking
-- **AI workforce agents** — 14 autonomous agents covering anomaly detection, demand forecasting, document intelligence, and more
-- **Enterprise SSO** — SAML 2.0 SP-initiated flow with JIT user provisioning
-- **Shift-fill automation** — Twilio SMS/WhatsApp cover requests with one-tap acceptance
-- **Developer API** — public REST API with 54 documented endpoints and key management
-- **CI/CD & security** — 21 GitHub Actions workflows, CodeQL code scanning, SBOM (SPDX-JSON + CycloneDX) and SLSA Level 2 build provenance on every release, Dependency Review gate blocking HIGH/CRITICAL vulnerabilities
+- **Shift scheduling** — rota builder with conflict detection and mobile publishing
+- **Timesheet management** — digital approval chains with overtime tracking
+- **Worker records** — employment history, documents, emergency contacts, RTW tracking
+- **Payroll preparation** — HMRC RTI-ready output (FPS & EPS format), AWR 12-week tracking, IR35 checker
+- **Compliance engine** — NLW/NMW enforcement at April 2026 rates (£13.03/hr), GDPR-aware data workflows, right-to-work expiry alerts
+- **AI workforce agents** — agents covering compliance monitoring, demand signals, document intelligence, and absence risk — all advisory; human approval required
+- **Action Inbox** — prioritised compliance and operational alerts surfaced to admins
+- **Shift-fill tools** — cover request infrastructure
+- **Developer API** — REST API with documented endpoints and key management
+- **CI/CD & security** — 21 GitHub Actions workflows, CodeQL scanning, SBOM (SPDX-JSON + CycloneDX) on every release, Dependency Review gate blocking HIGH/CRITICAL vulnerabilities
 
 ---
 
@@ -63,12 +64,12 @@ Building AI-powered workforce management for UK shift-based SMEs — one platfor
 
 | Document | Description |
 |---|---|
-| [Status](STATUS.md) | What is live, what is coming |
-| [Releases](RELEASES.md) | Public release notes by version |
-| [Changelog](CHANGELOG.md) | Full version history |
+| [Status](STATUS.md) | What is live, what is in validation |
+| [Releases](RELEASES.md) | Public release notes |
+| [Changelog](CHANGELOG.md) | Version history |
 | [Roadmap](ROADMAP.md) | Near-term and planned features |
 | [Architecture](ARCHITECTURE_OVERVIEW.md) | System design and tech stack |
-| [Deployment](DEPLOYMENT.md) | Fly.io setup, Dockerfile, GitHub Actions integration |
+| [Deployment](DEPLOYMENT.md) | Fly.io setup and GitHub Actions integration |
 | [Industries](INDUSTRIES.md) | Sector-specific capabilities |
 | [Use Cases](USECASES.md) | Workflow examples |
 | [Why Kin2](WHY_KIN2.md) | Product rationale |
@@ -90,11 +91,13 @@ Building AI-powered workforce management for UK shift-based SMEs — one platfor
 | **NLW / NMW** | Rate enforcement at April 2026 rates (£13.03/hr NLW) |
 | **AWR** | 12-week qualifying period tracking for agency workers |
 | **IR35** | 15-question weighted contractor status checker |
-| **HMRC RTI** | FPS and EPS direct submission |
-| **GDPR / UK GDPR** | Data export, right to erasure, consent records, Article 22 |
+| **HMRC RTI** | FPS and EPS format payroll output (direct HMRC submission not yet in pilot) |
+| **GDPR / UK GDPR** | Data export, right to erasure, consent records — GDPR-aware workflows, not a certified compliance tool |
 | **TUPE** | Transfer workflow with worker consent tracking |
-| **WTR** | 48-hour opt-out, rest breaks, holiday accrual |
-| **RTW** | Right-to-work document verification and expiry tracking |
+| **WTR** | 48-hour opt-out, rest breaks, holiday accrual tracking |
+| **RTW** | Right-to-work document verification and expiry alerts |
+
+> **Important:** Kin2 Workforce provides compliance-aware workflows and alerts to help businesses stay organised. It is not a substitute for qualified legal or HR advice, and has not been externally audited or certified as a compliance tool.
 
 ---
 
