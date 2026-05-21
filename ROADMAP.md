@@ -1,183 +1,73 @@
-# Kin2 Workforce — Public Roadmap
+# Roadmap
 
-> Last updated: 2026-05-18
-> This is a high-level public roadmap. Detailed internal planning is private.
-> Dates are directional, not guaranteed.
+_Last updated: May 2026 · Current version: v3.21.0_
 
----
-
-## Guiding principle
-
-> Make Kin2 useful, simple, secure, truthful, and profitable before making it bigger.
-
-Kin2 Workforce will prove the core journey works for real UK businesses before expanding into AI, memory, resilience, learning, and community.
+For what is live today, see [STATUS.md](STATUS.md). For version history, see [RELEASES.md](RELEASES.md).
 
 ---
 
-## Phase 1 — Stabilise (Now)
+## In active development
 
-**Goal:** Ensure production is stable, login works, and the Golden Path is testable.
+### Webhooks and automation
+Rule-based event triggers and outbound delivery infrastructure. Allows organisations to connect Kin2 Workforce events (shift published, timesheet approved, compliance alert, clock-in) to external systems without polling the API.
 
-- Render production confirmed as the deployment target
-- Health checks passing: `/health`, `/health/live`, `/health/ready`
-- Password login verified end-to-end
-- Google OAuth stabilised or safely deferred
-- Full build and type-check passing
+### Advanced reporting
+Organisation-level analytics and compliance dashboards. Covers workforce cost breakdowns, shift coverage rates, NLW exposure reports, and AWR qualifying period summaries across all locations.
 
 ---
 
-## Phase 2 — Prove core journey (Next)
+## Next up
 
-**Goal:** Demonstrate the full end-to-end Golden Path with real evidence.
+### Mobile app (iOS and Android)
+Native mobile application for field workers. Priority features: GPS clock-in / clock-out, shift viewing, timesheet submission, and shift-fill one-tap acceptance. Required to replace browser-based clock-in for care and security staff with limited connectivity.
 
-- Business registration and login
-- Organisation loading with correct data isolation
-- Worker management (add, assign, track)
-- Client and site folders
-- Shift calendar and assignment
-- Timesheet submission and approval
-- Payroll export preparation
-- Document storage and compliance warnings
-- Reports and Action Inbox
-- QA evidence collected (screenshots, logs, pass/fail)
+### Offline mode
+Clock-in and shift data sync on reconnect. Targets care and security workers in low-signal environments where a browser-based GPS session is not reliable.
 
----
+### Marketplace integrations
+Third-party connector framework for accounting (Xero, QuickBooks), HR (BambooHR), and payroll (Sage, IRIS). Builds on the existing public API foundation.
 
-## Phase 3 — Simplify UX
-
-**Goal:** Make the app feel simple, familiar, and safe for first users.
-
-- Folder-based navigation (Company / Workers / Clients / etc.)
-- Action Inbox as the daily starting point
-- Worker view separated from admin view
-- Status labels on every feature
-- Setup checklist for new businesses
-- Empty states and next-best-action prompts everywhere
+### API expansion
+Additional endpoints beyond the current 54, covering webhooks management, bulk operations, and compliance report exports. Full OpenAPI 3.0 spec maintained.
 
 ---
 
-## Phase 4 — Trust and evidence
+## Future
 
-**Goal:** Make all public claims match verified evidence.
+### Biometric and NFC clock-in
+Alternative to GPS-only verification for high-security sites or environments where GPS spoofing risk is elevated. Complements the existing fraud detection layer.
 
-- QA screenshots and pass/fail evidence committed
-- Audit logs and Proof of Value PDFs
-- Compliance report exports
-- Security documentation aligned with Cyber Essentials
-- Feature evidence status file updated
+### Customer webhook portal
+Self-service UI for configuring and monitoring webhook endpoints, delivery logs, and retry history. Builds on the Webhooks and automation work above.
 
 ---
 
-## Phase 5 — Revenue launch
+## Completed
 
-**Goal:** First paying customers.
-
-- Founding offer live: £149 setup + £39/month
-- Simple sales and demo page
-- 2-minute walkthrough video
-- 20 local UK businesses contacted
-- First pilot customer onboarded and supported
-- Feedback collected and case study prepared
-
----
-
-## Phase 6 — Cost and AI control
-
-**Goal:** Ensure profit per customer as volume grows.
-
-- Usage tracking per organisation
-- AI token limits by plan
-- SMS/storage/report limits by plan
-- Upgrade prompts at cost thresholds
-- Founder cost dashboard (per-org profit tracking)
-- BYOK AI for Growth, Scale, and Enterprise customers
-
----
-
-## Phase 7 — Workforce Resilience Suite
-
-**Goal:** Help businesses manage workforce change with fairness and evidence.
-
-- Workforce Resilience Dashboard
-- Redeployment Pathways
-- Worker Proof of Value reports
-- Client Risk and Profitability view
-- Responsible Restructuring Checklist
-- Worker Wellbeing Signals
-
----
-
-## Phase 8 — Memory Vault
-
-**Goal:** Give workers and businesses a safe record of their work journey.
-
-- Worker Memory (shifts, hours, training, achievements)
-- Company Memory (patterns, risks, lessons learned)
-- Work Passport (portable worker record)
-- Proof of Value PDF exports
-- Achievements and progress tracking
-- AI memory settings and privacy controls
-
----
-
-## Phase 9 — Wider Kin2 future
-
-**Goal:** Expand only after the workforce business is proven.
-
-These modules will only be built once Kin2 Workforce has real customers, real revenue, and a proven core:
-
-- Kin2 Learn
-- Kin2 Money
-- Kin2 Life
-- Kin2 Community
-- Kin2 Shield
-- Kin2 Legacy
-
----
-
-## What we are not building yet
-
-- Mass-market consumer app
-- Full HRMS/payroll processor
-- Recruitment platform
-- AI that makes HR decisions automatically
-
-Kin2 AI advises. Humans approve. The system records.
-
----
-
-## Target customers (Phase 5)
-
-UK shift-based small businesses:
-- Cleaning companies
-- Security companies
-- Care and support providers
-- Hospitality and events
-- Small recruitment agencies
-- Charities and community organisations
-- Training providers
-- Facilities management teams
-
----
-
-## Revenue targets (directional)
-
-| Milestone | Route |
-|-----------|-------|
-| £1k/month | ~10 Growth customers + setup fees |
-| £5k/month | ~40 customers across Starter/Growth/Scale |
-| £10k/month | ~85 customers + Enterprise |
-| £1M ARR | Long-term — 500+ customers across all plans |
-
----
-
-## Security roadmap
-
-1. Internal security checks (current)
-2. Cyber Essentials application
-3. Cyber Essentials Plus
-4. CREST penetration test
-5. SOC 2 readiness
-6. SOC 2 audit (when commercially justified)
-
-We will not claim certification until it is completed.
+| Feature | Version | Notes |
+|---|---|---|
+| Payroll Summary to core nav; pilot pack, ops checklist, governance docs | v3.21.0 | Starter users can access payroll export; pilot + ops documentation complete |
+| SaaS plans (Starter/Growth/Scale), SAIS AI add-ons billing, employee limit enforcement | v3.21.0 | Stripe integration; 9 AI add-ons (£19–£99/mo); plan-gated worker cap |
+| Personal Data Vault — GDPR Art.20 export + Art.17 erasure | v3.21.0 | Full audit trail, rate-limited |
+| Production lock-file repair, HIGH vulnerability eliminated | v3.21.0 | 0 HIGH/CRITICAL (was 1 HIGH via Replit packages) |
+| Soft-open runtime proxy on Fly.io | v3.21.0 | Health-check gated startup |
+| Enterprise-grade platform — security, API, pricing, compliance docs | v3.21.0 | |
+| 50+ client/server API contract fixes | v3.20.0 | |
+| Bulk expense actions, payslip PDF download, payroll CSV export | v3.19.0 | |
+| GitHub Actions hardening — 21 workflows, SBOM, SLSA Level 2, CodeQL | v3.9.8 | |
+| Compliance enforcement automation — NLW gate, vulnerability gate, GPL licence gate | v3.9.7 | |
+| Auto-merge safety fix, NLW/NMW April 2026 rates, deploy alert system | v3.9.6 | |
+| Annual NLW update workflow, security vulnerability reduction | v3.9.5 | |
+| CI pipeline stability, Dependabot updates, Secret Guard fixes | v3.9.3 | |
+| Enterprise SSO — SAML 2.0 SP-initiated, JIT user provisioning | v3.8.0 | Growth and Scale plans |
+| Shift-Fill Engine — Twilio SMS/WhatsApp, one-tap acceptance | v3.8.0 | |
+| Developer API — 54 endpoints, key management, rate limiting, OpenAPI spec | v3.8.0 | |
+| HMRC RTI Direct Submission — FPS and EPS | v3.8.0 | |
+| TUPE Transfer Management — end-to-end workflow, worker consent tracking | v3.8.0 | |
+| AI workforce agents — 14 autonomous agents (demand forecasting, fraud detection, document intelligence, compliance monitoring) | v3.8.0 | |
+| Multi-location dashboard — cross-site analytics and reporting | v3.8.0 | |
+| AWR Compliance Tracker — 12-week qualifying period monitoring | v3.7.7 | |
+| IR35 Status Checker — 15-question weighted assessment | v3.7.7 | |
+| RTW Document AI — automated right-to-work data extraction | v3.7.7 | |
+| Timesheet Fraud Detection — GPS spoofing and pattern anomaly detection | v3.7.7 | |
+| Demand Forecasting — AI-powered shift demand predictions | v3.7.7 | |
